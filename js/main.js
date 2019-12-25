@@ -1,6 +1,6 @@
 let tBackgroundElem = document.querySelector(`.slider`);
 let images = [
-	`./img/stock-photo-image-of-the-painter-s-arm-hand-holding-industrial-size-spray-gun-used-for-industrial-painting-and-275357318.svg`,
+	`/img/slide2.jpg`,
   `./img/slide1.jpg`,
   `./img/slide2.jpg`
 ]

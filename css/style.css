@@ -1,3 +1,18 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:'Rubik';
+}
+
+/* fonts */
+
+@font-face {
+    font-family:'Rubik';
+    src: url('../font/Rubik-Regular.ttf');
+}
+
+
 /* Slider */
 .slider {
     background-repeat: no-repeat;
@@ -7,34 +22,92 @@
     height: 100vw; 
     transition: background-image 2s ease;
 }
+
+body {
+    /* overflow: hidden; */
+}
 /* Main Page */
 .container {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
 }
 
+/* Header */
 header {
     display: flex;
-    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+    background: yellowgreen;
+}
+.header--item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header--item li {
+    display: inline;
+    color: #FFFFFF;
+    margin: 0 1vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
 }
 
+/* Main */
 main {
-    flex-grow: 2;
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    background: fuchsia;
+}
+.main--item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.main--text {
+    margin-left: 10%;
+}
+.main--title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 34px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.main--img, .main--subtitle {
+    display: none;
 }
 
-.container--item {
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
 /* Footer */
 .footer {
-    flex-grow: 1;
+    background: tan;
+    padding: 5vh 3vw;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-end; */
 }
+.footer--up_arrow {
+    display: none;
+}
+.footer--item {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+
+
+
+
 /* Search */
 .search {
     position: fixed;
@@ -90,4 +163,3 @@ main {
 .search--button div {
     margin: 0 5px;
 }
-
