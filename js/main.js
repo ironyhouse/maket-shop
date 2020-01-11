@@ -27,3 +27,15 @@ function hideElement() {
   document.querySelector(`.button_menu`).style.display = 'none';
   document.querySelector(`.button_search`).style.display = 'none';
 }
+
+/* Up Button */
+(function($) {
+  $(function() {
+  
+    $('#up').click(function() {
+      $('html, body').animate({scrollTop: 0},500);
+      return false;
+    })
+  
+  })
+  })(jQuery)
