@@ -299,7 +299,7 @@ main {
         background: #F44242;
     }
 }
-@media (orientation:portrait) and (max-width: 600px) {
+@media (orientation:portrait) {
     /* Header */
     header {
         height: 40vh;
