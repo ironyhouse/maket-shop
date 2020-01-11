@@ -208,7 +208,7 @@ main {
 /* @media ( max-width: 1024px ) {
 
 } */
-@media (orientation:landscape) and (min-width: 800px) {
+@media (orientation:landscape) and (min-width: 850px) {
     /****** Animation ******/
     /* all link */
     a {
@@ -285,13 +285,7 @@ main {
 
 
 /***** Mobile *****/
-@media (orientation:landscape) and (max-width: 700px) {
-    /* .main_menu li {
-        font-size: 3vh;
-    }
-    .main--title {
-        font-size: 3vh;
-    } */
+@media (orientation:landscape) and (max-width: 850px) {
     .main--subtitle {
         display: none;
     }
