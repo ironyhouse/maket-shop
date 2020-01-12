@@ -218,6 +218,9 @@ main {
         background-size:100% 1px;
     }
     /* main text */
+    .main--subtitle {
+        display: none;
+    }
     .main--item:hover .main--subtitle {
         display: block;
     }
