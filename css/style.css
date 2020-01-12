@@ -205,9 +205,6 @@ main {
 
 
 /***** PC *****/
-/* @media ( max-width: 1024px ) {
-
-} */
 @media (orientation:landscape) and (min-width: 850px) {
     /****** Animation ******/
     /* all link */
@@ -221,9 +218,6 @@ main {
         background-size:100% 1px;
     }
     /* main text */
-    .main--subtitle {
-        display: none;
-    }
     .main--item:hover .main--subtitle {
         display: block;
     }
@@ -357,6 +351,9 @@ main {
     .main--img {
         height: 100%;
     }
+    /* .main--subtitle, .main--subtitle {
+        display: block;
+    } */
     .main--title {
         margin: 20px 0;
     }

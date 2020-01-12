@@ -29,13 +29,25 @@ function hideElement() {
 }
 
 /* Up Button */
-(function($) {
-  $(function() {
-  
-    $('#up').click(function() {
-      $('html, body').animate({scrollTop: 0},500);
-      return false;
-    })
-  
-  })
-  })(jQuery)
+window.onload = function(){
+	//window.scrollTo(x,y)
+	var scrolled;
+	var timer;
+
+	document.getElementById('up').onclick = function(){
+		scrolled = window.pageYOffset;
+		//window.scrollTo(0,0);
+		scrollToTop();
+	}
+	function scrollToTop(){
+		if (scrolled > 0) {
+			window.scrollTo(0, scrolled);
+			scrolled = scrolled - 100; //100 - скорость прокрутки
+			timer = setTimeout(scrollToTop, 50);
+		}
+		else {
+			clearTimeout(timer);
+			window.scrollTo(0,0);
+		}
+	}
+}
