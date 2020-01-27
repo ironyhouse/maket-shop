@@ -69,8 +69,8 @@ main {
     margin: 10%;
 }
 .main--img svg {
-    height: 50%;
-    width: 50%;
+    height: 15vh;
+    width: 7vw;
 }
 .main--title {
     font-style: normal;
@@ -259,7 +259,7 @@ main {
     }
     .main--item:hover svg {
         opacity: 1;
-        transition: opacity 1000ms ease 0s;
+        transition: opacity 1s ease 0s;
     }
     /* drop menu */
     .header--menu_button:hover {
@@ -369,10 +369,10 @@ main {
         align-items: center;
         margin: 0;
     }
-    /* .main--img svg {
-        height: 20vh;
-        width: 20%;
-    } */
+    .main--img svg {
+        height: 15vh;
+        width: 40vw;
+    }
     /* .main--subtitle, .main--subtitle {
         display: block;
     } */
