@@ -301,6 +301,10 @@ main {
     main > div:nth-child(2n):hover  {
         background: #F44242;
     }
+    .main--item {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 @media (orientation:portrait) {
     /* Header */
